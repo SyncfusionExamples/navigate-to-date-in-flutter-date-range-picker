@@ -1,2 +1,1 @@
-# navigate-to-date-in-flutter-date-range-picker
-How to programmatically navigate to the date in the Flutter date range picker (SfDateRangePicker)
+**[View document in Syncfusion Flutter Knowledge base](https://www.syncfusion.com/kb/12135/how-to-programmatically-navigate-to-the-date-in-the-flutter-date-range-picker)**
