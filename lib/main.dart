@@ -9,13 +9,7 @@ class ProgrammaticDateNavigation extends StatefulWidget {
 }
 
 class DateNavigationState extends State<ProgrammaticDateNavigation> {
-  DateRangePickerController _controller;
-
-  @override
-  void initState() {
-    _controller = DateRangePickerController();
-    super.initState();
-  }
+  final DateRangePickerController _controller = DateRangePickerController();
 
   @override
   Widget build(BuildContext context) {
@@ -25,9 +19,12 @@ class DateNavigationState extends State<ProgrammaticDateNavigation> {
           children: [
             Container(
               margin: const EdgeInsets.fromLTRB(50, 130, 50, 0),
-              child: RaisedButton(child: Text('Change display date'),onPressed: (){
-                _controller.displayDate= DateTime(2020, 5, 1, 9, 0, 0);
-              },),
+              child: MaterialButton(
+                child: Text('Change display date'),
+                onPressed: () {
+                  _controller.displayDate = DateTime(2020, 5, 1, 9, 0, 0);
+                },
+              ),
             ),
             Card(
               margin: const EdgeInsets.fromLTRB(50, 50, 50, 110),
@@ -38,8 +35,6 @@ class DateNavigationState extends State<ProgrammaticDateNavigation> {
             ),
           ],
         ),
-
-        // This trailing comma makes auto-formatting nicer for build methods.
       ),
     );
   }
